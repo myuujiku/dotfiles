@@ -1,0 +1,12 @@
+####################
+# Alacritty config #
+####################
+
+# Spawn new instance in same directory
+key_bindings:
+  - { key: Return,   mods: Super|Shift, action: SpawnNewInstance }
+
+window:
+  dimensions:
+    columns: 88
+    lines: 28
