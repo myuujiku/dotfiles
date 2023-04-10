@@ -2,6 +2,8 @@
 # Config installer #
 ####################
 
+mkdir $HOME/.config/zsh/include -p
+
 # Stow directories to `$HOME`
 for dir in $(ls home); do
     stow -d home -t $HOME $dir
