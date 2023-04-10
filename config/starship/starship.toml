@@ -1,0 +1,29 @@
+###################
+# Starship config #
+###################
+
+add_newline = false
+
+format = '''
+[\[](bold)$hostname:$directory[\]](bold) $git_branch$git_commit$git_state$git_status
+[\[$username\]](bold) [⟫](bold red)[⟫](bold green)[⟫](bold blue) '''
+
+[character]
+disabled = true
+
+[directory]
+format = '[$read_only]($read_only_style)[$path]($style)'
+style = 'bold yellow'
+read_only = ''
+truncate_to_repo = false
+truncation_length = 5
+
+[hostname]
+ssh_only = false
+format = '[$ssh_symbol$hostname]($style)'
+style = 'bold cyan'
+
+[username]
+show_always = true
+format = '[$user]($style)'
+style_user = 'bold'
