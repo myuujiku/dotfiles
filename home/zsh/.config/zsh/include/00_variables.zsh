@@ -2,6 +2,8 @@
 # Variables #
 #############
 
+fpath=("$ZSH_CONF_DIR/completions" $fpath)
+
 # Binary paths
 typeset -U path PATH
 path=(
