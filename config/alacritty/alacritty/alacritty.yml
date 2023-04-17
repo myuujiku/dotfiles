@@ -13,14 +13,14 @@ window:
 
 font:
   normal:
-    family: "Hack"
+    family: "Noto Sans Mono NerdFont"
     style: Regular
   bold:
-    family: "Hack"
+    family: "Noto Sans Mono NerdFont"
     style: Bold
   italic:
-    family: "Hack"
+    family: "Noto Sans Mono NerdFont"
     style: Italic
   bold_italic:
-    family: "Hack"
+    family: "Noto Sans Mono NerdFont"
     style: Bold Italic
