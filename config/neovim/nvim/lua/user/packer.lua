@@ -9,5 +9,17 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
+    -- Colour scheme
     use 'folke/tokyonight.nvim'
+
+    -- Completion
+    use "hrsh7th/nvim-cmp"
+    use "hrsh7th/cmp-buffer"
+    use "hrsh7th/cmp-path"
+    use "hrsh7th/cmp-cmdline"
+    use "saadparwaiz1/cmp_luasnip"
+
+    -- Snippets
+    use "L3MON4D3/LuaSnip"
+    use "rafamadriz/friendly-snippets"
 end)
