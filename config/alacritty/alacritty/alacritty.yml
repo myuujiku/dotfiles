@@ -4,7 +4,8 @@
 
 # Spawn new instance in same directory
 key_bindings:
-  - { key: Return,   mods: Super|Shift, action: SpawnNewInstance }
+  - { key: Return,  mods: Super|Shift,  action: SpawnNewInstance  }
+  - { key: Return,  mods: Control,      chars: "\x1b[13;5u"       }
 
 window:
   dimensions:
