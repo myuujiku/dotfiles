@@ -27,7 +27,7 @@ function ze {
         local file="$ZSH_CONF_DIR/main.zsh"
     else
         # Search for files matching the pattern
-        local files="$(ls $ZSH_CONF_DIR/include/$arg*.zsh)" 2>/dev/null
+        local files="$(fd $arg $ZSH_CONF_DIR/include/)" 2>/dev/null
 
         # Get the first result of the search or create a new file
         if [[ -n "$files" ]]; then
