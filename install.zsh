@@ -12,7 +12,7 @@ fi
 echo
 
 echo Installing dependencies with cargo...
-eval "cargo install fd-find starship $EXTRA_PACKAGES --locked"
+eval "cargo install fd-find starship ripgrep $EXTRA_PACKAGES --locked"
 
 echo Updating neovim plugins...
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
