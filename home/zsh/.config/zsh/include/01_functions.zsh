@@ -9,9 +9,15 @@ function tmpdir {
 }
 
 # Delete all temporary directories
-function ctmp_ {
-    echo "Press y to delete the following files in '$HOME/tmp':"
-    ls -A1 ~/tmp
+function ctmp {
+    local files=$(fd "^.{10}\.d$" ~/tmp --color=always)
+
+    if ! [[ -n "$files" ]]; then
+        return 0
+    fi
+
+    echo "Press y to delete the following directories in '$HOME/tmp':"
+    echo $files
 
     if read -q; then
         rm -rf $(fd "^.{10}\.d$" ~/tmp)
