@@ -20,3 +20,5 @@ vim.keymap.set("n", "<leader>d", "\"_d")
 vim.keymap.set("v", "<leader>d", "\"_d")
 
 vim.keymap.set("n", "<Q", "nop")
+
+vim.keymap.set("n", "<C-i>", "ggVG=")
