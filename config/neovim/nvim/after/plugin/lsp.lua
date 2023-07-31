@@ -1,4 +1,4 @@
-local lsp = require('lsp-zero').preset({})
+local lsp = require("lsp-zero").preset({})
 
 local check_backspace = function()
     local col = vim.fn.col "." - 1
@@ -6,13 +6,13 @@ local check_backspace = function()
 end
 
 -- (Optional) Configure lua language server for neovim
-require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
+require("lspconfig").lua_ls.setup(lsp.nvim_lua_ls())
 
-local cmp = require('cmp')
+local cmp = require("cmp")
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
 local cmp_mappings = lsp.defaults.cmp_mappings({
-    ['<C-t>'] = cmp.mapping.select_prev_item(cmp_select),
-    ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
+    ["<C-t>"] = cmp.mapping.select_prev_item(cmp_select),
+    ["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
     ["<C-CR>"] = cmp.mapping.confirm { select = true },
     ["<C-Space>"] = cmp.mapping.complete(),
 })

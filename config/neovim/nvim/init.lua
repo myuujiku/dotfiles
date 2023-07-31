@@ -1,1 +1,1 @@
-require("nvim")
+require("lapis")
