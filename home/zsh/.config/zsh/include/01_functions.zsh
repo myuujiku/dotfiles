@@ -46,3 +46,13 @@ function ze {
     $EDITOR $file
     exec zsh
 }
+
+# Get file (girlfriend) – moves a file into the current directory
+function gf {
+    if [[ -z "$1" ]]; then
+        echo "No file provided."
+        return 1
+    fi
+
+    mv $1 .
+}
